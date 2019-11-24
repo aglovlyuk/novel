@@ -1,0 +1,15 @@
+.header {
+    background-color: #fff;
+    @include media('>=tablet') {
+    }
+    @include media('>=desktop') {
+    }
+    @include media('>=widescreen') {
+    }
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

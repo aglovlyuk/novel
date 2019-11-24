@@ -1,0 +1,82 @@
+<% var data = {
+  title: "Novel",
+  author: "© 2019 All Rights Reserved. Privacy/Legal"
+}; %>
+
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="container--xl">
+    <section class="gallery">
+        <div class="slide">
+            <img src="uploads/slide01.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="uploads/slide01.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="uploads/slide01.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="copyright">
+        <div class="container--md">
+            <p>Inceptos qui nobis mollis optio porta. Temporibus ipsa litora consectetur wisi laoreet donec aliquam pede proin aliquip? Sapiente similique feugiat! Senectus turpis auctor corporis repellendus! Eget faucibus nec ullamco accusamus, quisque temporibus quod recusandae quia cum tempore quisquam varius risus montes do lacinia ducimus elementum rhoncus penatibus primis? Consectetur assumenda sodales ante ut proin! Voluptatibus repellat! Occaecat sagittis nostra quasi, natus eros fames quos auctor montes mollit pharetra sit pharetra. Pretium netus feugiat pede? Expedita aliquam egestas tortor nunc, quod! Perferendis adipiscing phasellus esse, voluptatum ultrices modi maiores, facilisi libero? Dolor penatibus officia nobis neque, omnis ut porta fugiat! Fuga.</p>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="leasing-info">
+                    <h2 class="heading__ttl">LEASING INFORMATION</h2>
+                    <p class="heading__sub-ttl">For leasing information please contact</p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            Joe Smith <br>
+                            704.123.4567<br>
+                            <a href="mailto:jsmith@example.com">jsmith@example.com  </a>
+                        </div>
+                        <div class="col-md-6">
+                            Jane Jones <br>
+                            704.123.9876<br>
+                            <a href="mailto:jjones@example.com">jjones@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-contact">
+                    <h2>STAY IN TOUCH</h2>
+                    <p>Join our mailing list to receive the latest news and updates on NOVEL West Nashville</p>
+                    <form action="">
+                        <input type="text" name="" class="form-control" placeholder="NAME*" required>
+                        <input type="email" name="" class="form-control" placeholder="EMAIL*" required pattern="">
+                        <input type="tel" name="" class="form-control" placeholder="PHONE">
+
+                        <button class="btn btn-primary" type="submit">SIGN UP</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="map">
+
+        </div>
+    </section>
+
+    <section class="boilerplate">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <h3>BUILD COMMUNITY. BETTER PEOPLE'S LIVES.</h3>
+                <p>Crescent Communities is a nationally recognized, market-leading real estate investor, developer and operator of multifamily, commercial and mixed use communities. Crescent creates high-quality, differentiated communities in many of the fastest growing markets in the Southeast and Southwest. Since 1963, Crescent's development portfolio h as included more than 55 multifamily communities, 20 million square feet of commercial s pace and 60 single family master-planned communities Watch our brand video.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
