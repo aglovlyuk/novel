@@ -1,15 +1,35 @@
 .header {
-    background-color: #fff;
-    @include media('>=tablet') {
-    }
-    @include media('>=desktop') {
-    }
-    @include media('>=widescreen') {
-    }
+    position: relative;
 }
 
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    background-color: rgba(#4c4c4c, .8);
+    width: 280px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10vw;
+    top: 0;
+    z-index: 999;
+    @include media('>=desktop') {
+        width: 350px;
+        height: 51px;
+    }
+}
+
+.logo__img {
+    width: 240px;
+    height: 27px;
+    @include media('>=desktop') {
+        width: 300px;
+        height: 34px;
+    }
 }

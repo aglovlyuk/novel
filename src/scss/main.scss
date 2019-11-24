@@ -1,6 +1,8 @@
 @import "core/colors";
-@import "core/typography";
 @import "core/variables";
+@import "core/mixins";
+@import "core/icons";
+@import "core/typography";
 
 @import "vendor/reset";
 @import "vendor/include-media";
@@ -8,9 +10,7 @@
 // Bootstrap
 @import 'core/bootstrap-overrides';
 @import '~bootstrap/scss/bootstrap';
-
-@import "core/mixins";
-@import "core/icons";
+@import '~slick-carousel/slick/slick';
 
 @import "utils/utils";
 @import "utils/classes";
@@ -30,8 +30,15 @@
 
 @import "layout/header";
 @import "layout/layout";
+@import "layout/footer";
 
 @import "pages/not-found";
 @import "pages/general-cms";
 
 @import "components/popup";
+@import "components/gallery";
+@import "components/copyright";
+@import "components/leasing-info";
+@import "components/form-contact";
+@import "components/location";
+@import "components/boilerplate";

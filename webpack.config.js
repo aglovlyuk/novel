@@ -27,13 +27,13 @@ const config = {
     output: {
         filename: "./js/bundle.js"
     },
-    devtool: "source-map",
-    mode: "production",
+    devtool: "none",
+    mode: "development",
     optimization: {
         minimizer: [
             new TerserPlugin({
-                sourceMap: true,
-                extractComments: true
+                sourceMap: false,
+                extractComments: false
             })
         ]
     },

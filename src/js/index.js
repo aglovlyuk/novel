@@ -1,7 +1,10 @@
-import jQuery from "jquery";
+import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
 import popper from "popper.js";
 import bootstrap from "bootstrap";
+import 'slick-carousel';
 
 jQuery(function() {
-    console.log(11)
+    $(".js-slider").slick({});
 });

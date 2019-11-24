@@ -1,17 +1,20 @@
+@include font-face('Gotham', '../fonts/Gotham', 400, normal, woff2 woff);
+@include font-face('Gotham', '../fonts/Gotham-Medium', 500, normal, woff2 woff);
+
 // Fonts
-$font-primary:              Poppins, Arial, sans-serif;
+$font-primary:              Gotham, Arial, sans-serif;
 
 // Body
-$base-font-size:            16px !default;
-$line-height-base:          1.6111 !default; //27px
+$base-font-size:            15px !default;
+$line-height-base:          2 !default; //30px
 
 // link colors
 $link-cr-font:              $cr-brand-primary;
 
 // headings
-$heading-weight:            700;
+$heading-weight:            500;
 $heading-cr:                $cr-brand-tertiary;
-$heading-letter-spacing:    4px;
+$heading-letter-spacing:    0;
 
 // Additional
 $accent-color:              $cr-brand-primary;
