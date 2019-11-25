@@ -1,10 +1,23 @@
 import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
-import popper from "popper.js";
-import bootstrap from "bootstrap";
 import 'slick-carousel';
+//import popper from "popper.js";
+//import bootstrap from "bootstrap";
 
-jQuery(function() {
-    $(".js-slider").slick({});
+$(function() {
+    $(".js-slider").slick({
+        mobileFirst: true,
+        arrows: false,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+                    dots: false
+                }
+            }
+        ]
+    });
 });

@@ -1,3 +1,20 @@
+.contacts__heading {
+    margin-bottom: 35px;
+    line-height: 1.467;
+    h2 {
+        margin-bottom: .45rem;
+    }
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.contacts__addresses {
+    line-height: 1.333;
+}
+
 .leasing-info {
     height: 100%;
     display: flex;
@@ -17,4 +34,8 @@
             text-decoration: underline;
         }
     }
+}
+
+.leasing-info__logo {
+    margin-bottom: 35px;
 }

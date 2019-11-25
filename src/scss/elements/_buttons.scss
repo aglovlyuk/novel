@@ -10,6 +10,7 @@ a[class*="btn"] {
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: 0;
     height: 42px;
     background-color: $cr-brand-primary;
     font-size: 22px;
@@ -21,13 +22,30 @@ a[class*="btn"] {
     padding: 5px 22px;
     text-decoration: none;
     box-shadow: none;
+    overflow: hidden;
     @include media('>=desktop') {
         font-size: 28px;
         height: 51px;
     }
+    &:after {
+        @include anim($dur: $animation-speed-slow);
+        content: '';
+        z-index: -1;
+        position: absolute;
+        left: -35%;
+        top: 0;
+        width: 135%;
+        bottom: 0;
+        pointer-events: none;
+        background-color: lighten($cr-brand-primary, 20%);
+        transform: skew(-45deg) scaleX(-1);
+        transform-origin: 0 100%;
+    }
     @include hover {
-        background-color: darken($cr-brand-secondary, 10%);
         text-decoration: none;
+        &:after {
+            transform: skew(-45deg) scaleX(1);
+        }
     }
     .inverted & {
         color: $cr-brand-secondary;

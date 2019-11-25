@@ -44,4 +44,29 @@
     img {
         display: inline;
     }
+
+    .slick-dots {
+        @extend %listreset;
+        @include xcenter;
+        bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            margin: 0 3px;
+            line-height: 0;
+        }
+
+        button {
+            padding: 0;
+            border: 0;
+            background-color: $cr-info;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+    }
 }

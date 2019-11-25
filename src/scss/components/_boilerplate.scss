@@ -2,7 +2,11 @@
     line-height: 1.667;
     padding-top: 40px;
     @include media('>=desktop') {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 66px;
+        padding-bottom: 70px;
     }
+}
+
+.boilerplate__ttl {
+    margin-bottom: 0;
 }

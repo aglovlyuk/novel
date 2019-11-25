@@ -1,6 +1,11 @@
 .footer {
     text-align: center;
     font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 16px;
+    @include media('>=desktop') {
+        padding-top: 83px;
+    }
     a {
         color: currentColor;
         text-decoration: none;
@@ -8,4 +13,8 @@
             text-decoration: underline;
         }
     }
+}
+
+.footer__text {
+    margin-top: -7px;
 }

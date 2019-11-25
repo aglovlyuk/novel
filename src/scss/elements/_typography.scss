@@ -45,6 +45,12 @@ h5, .h5 {
     cursor: default;
 }
 
+h2 {
+    @include media('<tablet') {
+        font-size: $h2-font-size * 0.75;
+    }
+}
+
 a {
     @include anim;
     color: $cr-link;
